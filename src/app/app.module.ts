@@ -8,7 +8,11 @@ import { AppComponent } from './app.component';
 
 import { PaginaInicialModule } from './pagina-inicial/pagina-inicial.module';
 import { TelaUsuarioModule } from './tela-usuario/tela-usuario.modue';
+
 import { CadastroService } from './tela-usuario/cadastro/cadastro.service';
+
+
+
 
 
 @NgModule({

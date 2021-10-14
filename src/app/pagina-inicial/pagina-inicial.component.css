@@ -1,7 +1,22 @@
 
+
 .imagem{
     width: auto;
     height: auto;
 }
 
+
+
+.carousel-item{
+    height: 80vh; /* dimensiona o slider à altura do viewport */
+    background-size: 100%;
+    background-position: auto auto;
+ }
+
+ p{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+ }
 
