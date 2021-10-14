@@ -1,5 +1,42 @@
-<div class="container">
 
-    <P>tela de cadastro</P>
-   <p> akjhdfakjsdhkasjfhkasjhflksajfhkasjdhfksadjkdksjhksjksh</p>
-</div>
+<form #l="ngForm" (ngSubmit)= "formLivros(l)">  
+<div class= 'div1'>
+
+        <label >Titulo</label>
+        <input type="text" name="titulo"class = "input" id="titulo" [(ngModel)] = 'titulo'>
+        
+        <label >Autor</label>
+        <input type="text" name="autor"class = "input" id="autor" [(ngModel)] = 'autor'>
+        
+        <label >Editora</label>
+        <input type="text" name="editora"class = "input" id= "editora" [(ngModel)] = 'editora'>
+        
+        <label >Assunto</label>
+        <input type="text" name="assunto"class = "input" id="assunto" [(ngModel)] = 'assunto'>
+        <br>
+        
+        <br>
+       
+        <button type = "submit" class = "botao btn btn-primary btn-lg" >Salvar </button>
+     
+</div>      
+
+    <div class="div2">
+        
+        <label >Resumo</label>
+        <textarea name="resumo" id="" cols="30" rows="10" class="resumo" id ="resumo" [(ngModel)]= 'resumo'> </textarea>
+        <br><br>
+  
+       
+        
+    </div>
+    
+</form>       
+<button  class="botao btn btn-primary btn-lg" (click) = limpar()> Cancelar </button> 
+    
+
+
+
+
+
+

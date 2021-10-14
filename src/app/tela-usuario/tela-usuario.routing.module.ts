@@ -6,6 +6,7 @@ import{TelaUsuarioComponent} from './tela-usuario.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DevolucaoComponent } from './devolucao/devolucao.component';
 import { EmprestimoComponent } from './emprestimo/emprestimo.component';
+import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 
 const TelaUsuarioroutes: Routes = [
   
@@ -22,6 +23,9 @@ const TelaUsuarioroutes: Routes = [
   imports: [RouterModule.forChild(TelaUsuarioroutes),
               
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  declarations: [
+    CadastroAlunoComponent
+  ]
 })
 export class TelaUsuarioRoutingModule { }

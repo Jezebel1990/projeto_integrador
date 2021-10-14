@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { FormsModule } from '@angular/forms';
 
 import { TelaUsuarioComponent } from './tela-usuario.component';
 import { MenuSuperiorUsuarioComponent } from './menu-superior-usuario/menu-superior-usuario.component';
@@ -9,6 +9,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { EmprestimoComponent } from './emprestimo/emprestimo.component';
 import { DevolucaoComponent } from './devolucao/devolucao.component';
 import { TelaUsuarioRoutingModule } from './tela-usuario.routing.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 
@@ -27,6 +28,8 @@ import { TelaUsuarioRoutingModule } from './tela-usuario.routing.module';
   imports: [
     CommonModule,
     TelaUsuarioRoutingModule,
+    FormsModule,
+    HttpClientModule
   ]
    
 })

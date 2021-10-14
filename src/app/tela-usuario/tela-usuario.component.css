@@ -1,19 +1,21 @@
 .menu_lateral{
-    
     position:relative;
-    padding-top: 90px;
+    padding-top: 55px;
     float: left;
     height: 700px;
+    width: 15%;
     
-    width: 25%;
-       
     }
    
 .conteudo{
-    
+    padding-top: 0px;
     position: relative;
-    width: 75%;
+    width: 85%;
     height: 650px;
-    background: rgb(221, 8, 175);
+    background: rgb(0, 0, 0);
     float: right;
     }
+
+.separacao{
+    height: 40px;
+}
