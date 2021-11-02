@@ -1,0 +1,22 @@
+
+.menu_lateral{
+    position:relative;
+    height: 500px;
+    float:left;
+    background-color: yellow;
+    width: 25%;
+    float: left;
+        
+    }
+   
+.botao{
+    position:relative;
+    width: 205px;
+    height: 55px;
+    color: antiquewhite;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #1a60af;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}

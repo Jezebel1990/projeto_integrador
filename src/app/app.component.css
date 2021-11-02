@@ -11,5 +11,9 @@
 }
 .rodape_texto{
     padding-left: 10px;
+}
+.nada{
+    position: absolute;
+    bottom: 0;  
     color: aliceblue;
 }

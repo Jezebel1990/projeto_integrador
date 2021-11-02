@@ -1,36 +1,23 @@
 
 .menu{ 
-    background-color:#2F3038;
-
+    background-color:#000000;
     height: 75px;
     width: auto;
     margin: auto;
     align-items: center;        
-
-    width: -20px;
-    margin: auto;
-    align-items: flex-start;        
-
 }
 
 .logo{
     height: 75px;
-
     width: 75px;
     left: 1100px;
-
-
     margin-left: 0px;
 }
 
 .menu_texto{
     margin-right: 0px;
     margin-bottom: 0px;
-
     padding-top: 15px;
-
-    padding-top: 35px;
-
     position:relative;
     top: -75px;
     left: 90px;
@@ -38,11 +25,7 @@
     width: 300px;           
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
-
     font-size: 30px;
-
-    font-size: 14px;
-
     
       
 }
@@ -51,16 +34,12 @@
     padding-top: 35px;
     position: relative;
     top: -150px;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     height: 75px;
-    width: 100px;           
+    width: 50px;           
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
-
     font-size: 25px;
-
-    font-size: 14px;
-
     
 }
 
@@ -68,7 +47,6 @@ a{
     text-decoration: none;
     color: aliceblue;
 }
-
 
 
 
