@@ -10,7 +10,7 @@ import { EmprestimoComponent } from './emprestimo/emprestimo.component';
 import { DevolucaoComponent } from './devolucao/devolucao.component';
 import { TelaUsuarioRoutingModule } from './tela-usuario.routing.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { CadastroAlunoComponent } from './cadastroaluno/cadastroaluno.component';
 
 
 
@@ -23,7 +23,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     CadastroComponent,
     EmprestimoComponent,
     DevolucaoComponent,
-    
+    CadastroAlunoComponent,
+       
   ],
   imports: [
     CommonModule,

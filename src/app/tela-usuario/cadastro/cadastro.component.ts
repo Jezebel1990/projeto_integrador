@@ -1,8 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
-
+import { Router} from '@angular/router';
 import { CadastroService } from './cadastro.service';
 
 @Component({
@@ -28,6 +27,7 @@ export class CadastroComponent implements OnInit {
   }
 
   formLivros(form: any){
+    
     this.cadastroService.postLivros(form.value).subscribe(
       success => {console.log('sucesso');
       this.limpar()

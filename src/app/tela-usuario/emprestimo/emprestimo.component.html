@@ -1,1 +1,24 @@
-<p>emprestimo works!</p>
+
+
+<div class = "border-bottom" *ngFor = "let emprestimo of emprestimos" >
+    <br>
+    
+    <p> <span class = "label"> Emprestimo:  </span> 
+        <span>{{emprestimo.id}} </span> </p>
+    <p> <span class = "label"> Livro:  </span> 
+        <span>{{emprestimo.titulo}}</span></p>
+    <p> <span class = "label"> Aluno: </span> 
+        <span> {{emprestimo.aluno}}</span></p>
+    <p> <span class= "label"> Data de emprestimo: </span> 
+        <span> {{emprestimo.data_de_emprestimo}}</span></p>
+    <p> <span class = "label"> Data de devolução: </span> 
+        <span> {{emprestimo.data_de_devolucao}} </span></p>
+    <br>
+<button class = "botao btn-primary" (click) = devolucao(emprestimo.id)>Devolver</button>
+<button class = "botao btn-primary" (click) = renovacao(emprestimo.id)>Renovar</button>
+<br>
+<br>
+
+</div>
+
+

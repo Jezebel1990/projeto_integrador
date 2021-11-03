@@ -10,6 +10,7 @@ import { PaginaInicialModule } from './pagina-inicial/pagina-inicial.module';
 import { TelaUsuarioModule } from './tela-usuario/tela-usuario.modue';
 
 import { CadastroService } from './tela-usuario/cadastro/cadastro.service';
+import { CadastroAlunoService } from './tela-usuario/cadastroaluno/cadastroaluno.service';
 
 
 
@@ -29,7 +30,7 @@ import { CadastroService } from './tela-usuario/cadastro/cadastro.service';
     AppRoutingModule,
     
   ],
-  providers: [CadastroService],
+  providers: [CadastroService, CadastroAlunoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
