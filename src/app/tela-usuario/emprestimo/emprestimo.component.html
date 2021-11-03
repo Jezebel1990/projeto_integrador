@@ -1,1 +1,143 @@
-<p>emprestimo works!</p>
+<h1 style="text-align:center;">Empréstimos</h1>
+<div class="main-panel">
+
+<nav class="navbar navbar-default">
+ <div class="container">
+<div class="collapse navbar-collapse center">
+ <ul class="nav navbar-nav navbar-center">
+<li>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<i class="ti-clipboard"></i>
+<p>Empréstimos</p>
+</a>
+ </li>
+<li class="dropdown">
+
+ <ul class="dropdown-menu">
+<li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<div class="content">
+<div class="container center">
+<div class="nav-tabs-navigation">
+<div class="nav-tabs-wrapper">
+<ul class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#registro" role="tab">Registrar Empréstimo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#emprestados" role="tab">Livros Emprestados</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#devolver" role="tab">Livros a Devolver</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#hist" role="tab">Histórico</a>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content text-center">
+<div class="tab-pane active" id="registro" role="tabpanel">
+<div class="container my-6">
+<div class="col-md-7 mx-auto borderSCEL p-1">
+<h3 style="color: white; text-align: center;">Registrar Empréstimo</h3>
+<br/>
+<div class="colSCEL p-1">
+ <form class="form-inline">
+<div class="col-6 form-group mb-2">
+<label class="form-check-label" for="dt_in">DATA DE EMPRÉSTIMO</label>
+<input type="date" class="form-control" id="dt_in">
+</div>
+<div class="col-6 form-group mb-2">
+<label class="form-check-label" for="dt_in">DATA DE DEVOLUÇÃO</label>
+<input type="date" class="form-control" id="dt_in">
+</div>
+</form>
+
+<form action="#" th:action="@{/emprestimos/save}" th:object="${emprestimo}" method="post">
+<label for="isbn" class="col-form-label">ISBN</label>
+<input type="text" th:field="*{isbn}" class="form-control" id="isbn" placeholder="isbn">
+<span th:if="${#fields.hasErrors('isbn')}" th:errors="*{isbn}" class="text-warning"></span>
+						
+<label for="ra" class="col-form-label">RA</label>
+<input type="text" th:field="*{ra}" class="form-control" id="ra" placeholder="RA">
+<span th:if="${#fields.hasErrors('ra')}" th:errors="*{ra}" class="text-warning"></span>
+<div th:replace="fragments/alert"></div>
+
+<br>
+<div class="d-grid gap-2 d-md-flex justify-content-center">
+  <button class="btn btn-success me-md-2" type="submit">Emprestar</button>
+  <button class="btn btn-primary" type="submit">Renovar</button>
+  <button class="btn btn-danger" type="reset">Limpar</button>
+</div>
+</form>
+</div>
+</div>
+<h6 th:text="${message}" class="text-danger"></h6>
+</div>
+</div>
+<div class="tab-pane" id="emprestados" role="tabpanel">
+<div class="grid-shuffle">
+<ul id="grid" class="row">            
+<li class="book-item col-lg-11 col-sm-6 card" data-groups='["classic"]' data-date-created='1937' data-title='Of Mice and Men'data-color='#fcc278'>
+<div class="bk-img">
+ <div class="bk-wrapper">
+<div class="bk-book bk-bookdefault">
+<div class="bk-front">
+
+<div class="bk-cover" style="background-image: url('https://m.media-amazon.com/images/I/41YHWGB1NdL.jpg')"></div>
+</div>
+<div class="bk-back"></div>
+<div class="bk-center"></div>
+</div>
+</div>
+</div>
+<div class="item-details">
+<h3 class="book-item_title">Sobre Ratos e Homens</h3>
+<p class="author">John Steinbeck &bull; 1937</p>
+<div class="col-xs-7 info">
+<h4>Joana</h4>
+<h5>RA:9999999</h5>
+<h5>23/10/2021</h5>
+</div>                                            
+</div>                                           
+</li>
+                                                
+<li class="book-item col-lg-11 col-sm-6 card" data-groups='["classic","sci-fi"]' data-date-created='1949' data-title='1984'data-color='#9c9688'>
+<div class="bk-img">
+<div class="bk-wrapper">
+<div class="bk-book bk-bookdefault">
+<div class="bk-front">
+<div class="bk-cover" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/819js3EQwbL.jpg')"></div>
+</div>
+<div class="bk-back"></div>
+<div class="bk-center"></div>
+</div>
+</div>
+</div>
+<div class="item-details">
+<h3 class="book-item_title">1984</h3>
+<p class="author">George Orwell</p>
+                                
+<div class="col-xs-7 info">
+<h4>Lucas</h4>
+<h5>RA:9999999</h5>
+<h5>02/11/2021</h5>
+</div>                 
+</div>
+</li>
+</ul>
+</div>
+<div class="tab-pane active" id="devolver" role="tabpanel"></div>
+<div class="tab-pane" id="hist" role="tabpanel"></div>
+
+ </div>
+</div>
