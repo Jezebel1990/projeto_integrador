@@ -4,7 +4,7 @@ import { DevolucaoService } from './devolucao.service';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-emprestimo',
+  selector: 'app-devolucao',
   templateUrl: './devolucao.component.html',
   styleUrls: ['./devolucao.component.css']
 })
@@ -12,7 +12,7 @@ export class DevolucaoComponent implements OnInit {
 
 
 dev: any = "";
-idbotao: string =""
+idbotao: string ="";
 
 
   constructor(private service: DevolucaoService, private location: Location, private router: Router) { }
@@ -20,10 +20,11 @@ idbotao: string =""
 
   
   
-  
+         
   ngOnInit(): void {
     this.service.list().subscribe(dados => this.dev =dados)
-  };
+    console.log(this.dev)
+  }; 
 
 
   devolucao(idbotao: any){

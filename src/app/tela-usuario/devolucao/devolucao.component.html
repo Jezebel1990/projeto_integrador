@@ -1,20 +1,20 @@
 
-<div class = "border-bottom" *ngFor = "let devolucao of dev" >
+
+<div class = "border-bottom" *ngFor = "let dev of dev" >
     <br>
-    
     <p> <span class = "label"> Emprestimo:  </span> 
-        <span>{{devolucao.id}} </span> </p>
+        <span>{{dev.id}} </span> </p>
     <p> <span class = "label"> Livro:  </span> 
-        <span>{{devolucao.titulo}}</span></p>
+        <span>{{dev.titulo}}</span></p>
     <p> <span class = "label"> Aluno: </span> 
-    <span> {{devolucao.aluno}}</span></p>
+    <span> {{dev.aluno}}</span></p>
     <p> <span class= "label"> Data de devolucao: </span> 
-        <span> {{devolucao.data_de_emprestimo}}</span></p>
+        <span> {{dev.data_de_emprestimo}}</span></p>
     <p> <span class = "label"> Data de devolução: </span> 
-        <span> {{devolucao.data_de_devolucao}} </span></p>
+        <span> {{dev.data_de_devolucao}} </span></p>
     <br>
-<button class = "botao btn-primary" (click) = devolucao(devolucao.id)>Devolver</button>
-<button class = "botao btn-primary" (click) = renovacao(devolucao.id)>Renovar</button>
+<button class = "botao btn-primary" (click) = devolucao(dev.id)>Devolver</button>
+<button class = "botao btn-primary" (click) = renovacao(dev.id)>Renovar</button>
 <br>
 <br>
 

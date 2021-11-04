@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {TelaUsuarioComponent} from './tela-usuario.component';
+import { TelaUsuarioComponent } from './tela-usuario.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { DevolucaoComponent } from './devolucao/devolucao.component';
 import { EmprestimoComponent } from './emprestimo/emprestimo.component';
