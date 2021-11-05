@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
-
 import { PaginaInicialModule } from './pagina-inicial/pagina-inicial.module';
 import { TelaUsuarioModule } from './tela-usuario/tela-usuario.modue';
 
