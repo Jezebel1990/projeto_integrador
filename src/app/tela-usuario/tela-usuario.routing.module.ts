@@ -9,8 +9,9 @@ import { CadastroAlunoComponent } from './cadastroaluno/cadastroaluno.component'
 
 const TelaUsuarioroutes: Routes = [
   
-    {path: 'usuario', component:TelaUsuarioComponent, children:[
-    {path: 'cadastro', component:CadastroComponent},
+    {path: 'usuario', component:TelaUsuarioComponent
+      ,
+    children:[{path: 'cadastro', component:CadastroComponent},
     {path: 'emprestimo', component:EmprestimoComponent},
     {path: 'devolucao', component:DevolucaoComponent},
     {path: 'cadastroaluno', component:CadastroAlunoComponent},]},

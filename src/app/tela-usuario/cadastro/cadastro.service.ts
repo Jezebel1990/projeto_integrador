@@ -8,7 +8,7 @@ import {take} from 'rxjs/operators';
 export class CadastroService{
     constructor (private http: HttpClient){}
     formulario: any;
-    private readonly API = 'http://localhost:3000/livros'
+    private readonly API = 'https://pi-saladeleitura-default-rtdb.firebaseio.com/livros'
     
 
     postLivros(formulario: any){

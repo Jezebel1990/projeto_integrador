@@ -47,3 +47,9 @@ Thumbs.db
 db.json
 exemplo.http
 package-lock.json
+.github/workflows/firebase-hosting-merge.yml
+.gitignore
+firebase.json
+.github/workflows/firebase-hosting-pull-request.yml
+.firebase/hosting.ZGlzdFxwcm9qZXRvLWludGVncmFkb3I.cache
+.firebaserc
