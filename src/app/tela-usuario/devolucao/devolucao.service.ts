@@ -8,7 +8,7 @@ import {take} from 'rxjs/operators';
 
 export class DevolucaoService {
 
-  API = 'http://localhost:3000/emprestimos/';
+  API = 'https://pi-saladeleitura-default-rtdb.firebaseio.com/emprestimos/';
   
   constructor(private http:HttpClient) { }
 
