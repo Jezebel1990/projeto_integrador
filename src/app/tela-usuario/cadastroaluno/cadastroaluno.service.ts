@@ -7,7 +7,7 @@ import {take} from 'rxjs/operators';
 export class CadastroAlunoService {
   constructor (private http: HttpClient){}
   formularioAluno: any;
-  private readonly API = 'https://pi-saladeleitura-default-rtdb.firebaseio.com/'
+  private readonly API = 'API'
   
 
   postAlunos(formularioAluno: any){

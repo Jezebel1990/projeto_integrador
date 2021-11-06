@@ -9,11 +9,13 @@ import {take} from 'rxjs/operators';
 
 export class EmprestimoService {
 
-  API = 'https://pi-saladeleitura-default-rtdb.firebaseio.com/emprestimos/';
+  API = 'Api/';
   
   constructor(private http:HttpClient) { }
 
   list(){
+    
+   
     return this.http.get(this.API);
   }
 

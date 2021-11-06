@@ -22,7 +22,8 @@ idbotao: string ="";
   
          
   ngOnInit(): void {
-    this.service.list().subscribe(dados => this.dev =dados)
+    this.dev = this.service.list()
+    //this.service.list().subscribe(dados => this.dev =dados)
     console.log(this.dev)
   }; 
 
