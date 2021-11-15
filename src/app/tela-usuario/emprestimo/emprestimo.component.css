@@ -1,11 +1,17 @@
-p{
-    color: aliceblue;
-    font-family: 'Poppins',sans-serif;
-    font-style:normal;
-    font-weight:300;
-    font-size: 20px;
-    margin-left: 20px;
+h3{
+  color: aliceblue;
+  font-weight: bold;
 }
+
+  label{
+      color: aliceblue;
+      font-family: 'Poppins',sans-serif;
+      font-style:normal;
+      font-weight:300;
+      font-size: 20px;
+      margin-left: 20px;
+  }
+
 .botao{
     margin-top: 0px;
     margin-left: 20px;
@@ -16,18 +22,4 @@ p{
     border-radius: 50px;
     background-color: #0d6fb1;
     left: 100px;
-}
-
-.label{
-font-weight: bold;
-color: aqua;
-}
-.barra{
-    color: blue;
-    height: 2px;
-    width: 100%;
-}
-.rolagem{
-overflow-y: scroll;
-
 }
