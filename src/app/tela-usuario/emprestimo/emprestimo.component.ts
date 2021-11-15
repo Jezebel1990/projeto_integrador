@@ -26,21 +26,15 @@ idbotao: string =""
   };
 
 
-  devolucao(idbotao: any){
+ devolucao(idbotao: any){
     console.log(idbotao)
     this.service.devolucao(idbotao).subscribe(
-      success => {console.log('sucesso');
+      _success => {console.log('sucesso');
      location.reload()},
     error=> console.error(error),
     ()=> console.log('request completo')
   );
     
-  };
-
-
-  renovacao(idbotao: any){
-    console.log(idbotao)
   }
   
-
 }
