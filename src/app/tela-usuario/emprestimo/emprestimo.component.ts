@@ -16,9 +16,6 @@ idbotao: string =""
 
 
   constructor(private service: EmprestimoService, private location: Location, private router: Router) { }
-
-
-  
   
   
   ngOnInit(): void {
